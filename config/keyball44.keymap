@@ -37,50 +37,50 @@
         default_layer {
             label = "BASE";
             bindings = <
-&kp ESCAPE           &kp Q               &kp W                    &kp E               &kp R           &kp T                          &kp Y        &kp U               &kp I               &kp O           &kp P           &kp BACKSPACE
-&kp LCTRL            &mt LGUI A          &mt LALT S               &mt LCTL D          &mt LSFT F      &kp G                          &kp H        &mt LSFT J          &mt LCTL K          &mt LALT L      &mt LGUI SQT    &kp SQT
-&kp LEFT_SHIFT       &lt MOUSE Z         &mt (LALT | RALT) X      &kp C               &kp V           &kp B                          &kp N        &kp M               &kp COMMA           &mt (LALT | RALT) DOT  &lt MOUSE SLASH  &mkp MB1
-&kp LGUI             &kp LALT            &lt MEDIA ESCAPE         &lt NAV SPACE       &lt FUN TAB                  &lt SYM ENTER  &lt NUM BACKSPACE                                              &mo SCROLL
+&kp ESCAPE      &kp Q        &kp W             &kp E        &kp R          &kp T                     &kp Y              &kp U        &kp I        &kp O            &kp P            &kp BACKSPACE
+&kp LCTRL       &mt LGUI A   &mt LALT S        &mt LCTRL D  &mt LSHFT F    &kp G                     &kp H              &mt RSHFT J  &mt RCTRL K  &mt RIGHT_ALT L  &mt RGUI SQT     &kp SQT
+&kp LEFT_SHIFT  &lt MOUSE Z  &kp X             &kp C        &kp V          &kp B                     &kp N              &kp M        &kp COMMA    &kp DOT          &lt MOUSE SLASH  &mkp MB1
+&kp LGUI        &kp LALT     &lt MEDIA ESCAPE  &lt NAV TAB  &lt FUN SPACE             &lt SYM ENTER  &lt NUM BACKSPACE                                                              &mo SCROLL
             >;
         };
 
         fun_layer {
             label = "FUN";
             bindings = <
-&none   &none   &none   &none   &none   &none              &kp F12  &kp F9   &kp F8   &kp F7   &kp PSCR  &none
-&none   &kp LGUI  &kp LALT  &kp LCTL  &kp LSFT  &none      &kp F11  &kp F6   &kp F5   &kp F4   &kp SLCK  &none
-&none   &none   &none   &kp RALT  &none   &none              &kp F10  &kp F3   &kp F2   &kp F1   &kp PAUS  &none
-&trans  &trans  &trans  &trans  &trans             &trans  &trans                                              &trans
+&none   &none     &none     &none     &none     &none              &kp F12  &kp F9  &kp F8  &kp F7  &kp PSCR  &none
+&none   &kp LGUI  &kp LALT  &kp LCTL  &kp LSFT  &none              &kp F11  &kp F6  &kp F5  &kp F4  &kp SLCK  &none
+&none   &none     &none     &kp RALT  &none     &none              &kp F10  &kp F3  &kp F2  &kp F1  &kp PAUS  &none
+&trans  &trans    &trans    &trans    &trans               &trans  &trans                                     &trans
             >;
         };
 
         nav_layer {
             label = "NAV";
             bindings = <
-&none   &none   &none   &none   &none   &none              &none     &none      &none       &none      &none   &none
-&none   &kp LGUI  &kp LALT  &kp LCTL  &kp LSFT  &none      &kp RIGHT &kp UP     &kp DOWN    &kp LEFT   &kp CAPS  &none
-&none   &none   &none   &none   &none   &none              &kp END   &kp PG_UP  &kp PG_DN   &kp HOME   &kp INS   &none
-&trans  &trans  &trans  &trans  &trans             &kp BACKSPACE  &kp ENTER  &kp DELETE                          &trans
+&none   &none     &none     &none     &none     &none                     &none      &none      &none      &none      &none     &none
+&none   &kp LGUI  &kp LALT  &kp LCTL  &kp LSFT  &none                     &kp LEFT   &kp UP     &kp DOWN   &kp RIGHT  &kp CAPS  &none
+&none   &none     &none     &none     &none     &none                     &kp END    &kp PG_UP  &kp PG_DN  &kp HOME   &kp INS   &none
+&trans  &trans    &trans    &trans    &trans               &kp BACKSPACE  &kp ENTER                                             &kp DELETE
             >;
         };
 
         media_layer {
             label = "MEDIA";
             bindings = <
-&none   &none   &none   &none   &none   &none              &none       &none       &none       &none       &none   &none
-&none   &kp C_PREV  &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &kp C_NEXT  &kp C_NEXT  &kp C_VOL_UP  &kp C_MUTE  &kp C_VOL_DN  &kp C_PREV  &none
-&none   &none   &none   &none   &none   &none              &none       &none       &none       &none       &none   &none
-&trans  &trans  &kp C_PP  &kp C_STOP  &trans             &kp C_PP  &kp C_STOP  &kp C_MUTE                          &trans
+&none   &none       &none         &none       &none         &none                     &none       &none         &none       &none         &none       &none
+&none   &kp C_PREV  &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &kp C_NEXT                &kp C_NEXT  &kp C_VOL_UP  &kp C_MUTE  &kp C_VOL_DN  &kp C_PREV  &none
+&none   &none       &none         &none       &none         &none                     &none       &none         &none       &none         &none       &none
+&trans  &trans      &kp C_PP      &kp C_STOP  &trans                        &kp C_PP  &kp C_STOP                                                      &kp C_MUTE
             >;
         };
 
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&none   &bootloader  &none   &mo SCROLL  &mo SNIPE  &none              &none  &none  &mo SCROLL  &mo SNIPE  &none  &none
-&none   &kp LGUI  &kp LALT  &kp LCTL  &kp LSFT  &none                  &none  &kp LGUI  &kp LALT  &kp LCTL  &kp LSFT  &none
-&none   &trans  &kp RALT  &none   &none   &mkp MB3                   &none  &trans  &mo SNIPE  &mo SCROLL  &mkp MB3  &none
-&trans  &trans  &mkp MB2  &mkp MB1  &mkp MB3             &mkp MB2  &mkp MB1  &mkp MB3                              &trans
+&none   &bootloader  &none     &mo SCROLL  &mo SNIPE  &none                   &none     &none     &mo SCROLL  &mo SNIPE   &none     &none
+&none   &kp LGUI     &kp LALT  &kp LCTL    &kp LSFT   &none                   &none     &kp LGUI  &kp LALT    &kp LCTL    &kp LSFT  &none
+&none   &trans       &kp RALT  &none       &none      &mkp MB3                &none     &trans    &mo SNIPE   &mo SCROLL  &mkp MB3  &none
+&trans  &trans       &mkp MB2  &mkp MB1    &mkp MB3                 &mkp MB2  &mkp MB1                                              &mkp MB3
             >;
         };
 
@@ -110,27 +110,27 @@
 &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans             &trans  &trans                                              &trans
+&trans  &trans  &trans  &trans  &trans              &trans  &trans                                  &trans
             >;
         };
 
         number_layer {
             label = "NUM";
             bindings = <
-&none   &kp LEFT_BRACKET  &kp N7  &kp N8  &kp N9  &kp RIGHT_BRACKET              &none  &none  &none  &none  &none  &none
-&none   &kp SEMI          &kp N4  &kp N5  &kp N6  &kp EQUAL                      &none  &none  &none  &none  &none  &none
-&none   &kp DOT           &kp N1  &kp N2  &kp N3  &kp BACKSLASH                  &none  &none  &none  &none  &none  &none
-&trans  &trans  &kp MINUS  &kp N0  &kp DOT  &trans             &trans  &trans                                              &trans
+&none   &kp LEFT_BRACKET  &kp N7     &kp N8  &kp N9   &kp RIGHT_BRACKET              &none   &none  &none  &none  &none  &none
+&none   &kp SEMI          &kp N4     &kp N5  &kp N6   &kp EQUAL                      &none   &none  &none  &none  &none  &none
+&none   &kp DOT           &kp N1     &kp N2  &kp N3   &kp BACKSLASH                  &none   &none  &none  &none  &none  &none
+&trans  &trans            &kp MINUS  &kp N0  &kp DOT                         &trans  &trans                              &trans
             >;
         };
 
         symbol_layer {
             label = "SYM";
             bindings = <
-&none   &kp LS(LEFT_BRACKET)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(RIGHT_BRACKET)    &none  &none  &none  &none  &none  &none
-&none   &kp LS(SEMI)          &kp LS(N4)  &kp LS(N5)  &kp LS(N6)  &kp LS(EQUAL)            &none  &none  &none  &none  &none  &none
-&none   &kp GRAVE             &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(BACKSLASH)        &none  &none  &none  &none  &none  &none
-&trans  &trans  &kp GRAVE  &kp LS(MINUS)  &kp LS(N0)  &trans       &trans  &trans                                              &trans
+&none   &kp LS(LEFT_BRACKET)  &kp LS(N7)  &kp LS(N8)     &kp LS(N9)  &kp LS(RIGHT_BRACKET)              &none   &none  &none  &none  &none  &none
+&none   &kp LS(SEMI)          &kp LS(N4)  &kp LS(N5)     &kp LS(N6)  &kp LS(EQUAL)                      &none   &none  &none  &none  &none  &none
+&none   &kp GRAVE             &kp LS(N1)  &kp LS(N2)     &kp LS(N3)  &kp LS(BACKSLASH)                  &none   &none  &none  &none  &none  &none
+&trans  &trans                &kp GRAVE   &kp LS(MINUS)  &kp LS(N0)                             &trans  &trans                              &trans
             >;
         };
     };
